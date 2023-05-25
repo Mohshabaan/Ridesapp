@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Simulation App</title>
+  </head>
+  <body>
+    <h1>Uber Simulation App</h1>
+    
+    <h2>Driver Panel</h2>
+    <label for="driver-name">Name:</label>
+    <input type="text" id="driver-name" name="driver-name"><br><br>
+    
+    <label for="driver-location">Location:</label>
+    <input type="text" id="driver-location" name="driver-location"><br><br>
+    
+    <label for="driver-status">Status:</label>
+    <select id="driver-status" name="driver-status">
+      <option value="available">Available</option>
+      <option value="unavailable">Unavailable</option>
+    </select><br><br>
+    
+    <button id="driver-update-btn">Update</button>
+    
+    <hr>
+    
+    <h2>Rider Panel</h2>
+    <label for="rider-name">Name:</label>
+    <input type="text" id="rider-name" name="rider-name"><br><br>
+    
+    <label for="rider-location">Location:</label>
+    <input type="text" id="rider-location" name="rider-location"><br><br>
+    
+    <label for="rider-destination">Destination:</label>
+    <input type="text" id="rider-destination" name="rider-destination"><br><br>
+    
+    <button id="rider-request-btn">Request Ride</button>
+    
+    <hr>
+    
+    <h2>Map Panel</h2>
+    <div id="map-container"></div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
